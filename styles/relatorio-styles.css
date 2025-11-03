@@ -1,0 +1,51 @@
+    body {
+      font-family: 'Inter', Arial, sans-serif; 
+      background: #f7faff; 
+      color: #222; 
+      margin:0; 
+      padding:40px;
+    }
+
+    .relatorio {
+      background: #fff; 
+      border-radius: 14px; 
+      box-shadow: 0 2px 16px #d0e4fb40; 
+      max-width: 650px; margin: 0 auto; 
+      padding: 32px;
+    }
+
+    h2 {
+      color: #0b57d0;
+    }
+
+    h3 {
+      color: #3762bc;
+    }
+
+    pre {
+      background: #ecf4fb; 
+      color: #153530; 
+      padding: 14px 12px; 
+      border-radius: 7px; 
+      overflow-x:auto;
+    
+    }
+    .status {
+      font-size:1.09em;
+    }
+
+    .tentativas {
+      margin-top:18px;
+    }
+
+    ul {
+      margin-left:1.5em;
+    }
+
+    .erro {
+      color: #b52e23;
+    }
+
+    .sucesso {
+      color: #218c4b;
+    }

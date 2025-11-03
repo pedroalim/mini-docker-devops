@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.pros, .cons {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.pros {
+    background-color: #e6ffe6;
+}
+
+.cons {
+    background-color: #ffe6e6;
+}

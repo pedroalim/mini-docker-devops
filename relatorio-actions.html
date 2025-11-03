@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatório do Build Automático – GitHub Actions</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/relatorio-styles.css">
+</head>
+<body>
+  <div class="relatorio">
+    <h2>Relatório do Build Automático (GitHub Actions)</h2>
+    <p class="status"><b>Status:</b> <span class="sucesso">Sucesso</span></p>
+    <h3>Log Principal:</h3>
+    <pre>
+[+] Building 8.2s (7/7) FINISHED
+ => [internal] load build definition from Dockerfile 0.1s
+ => => transferring dockerfile: 31B
+ => [internal] load .dockerignore 0.0s
+ ...
+ => => naming to docker.io/library/teste-mini-site
+    </pre>
+    <div class="tentativas">
+      <h3>Resumo das tentativas de correção:</h3>
+      <ul>
+        <li>Commit 1: Ajuste nome do arquivo Dockerfile</li>
+        <li>Commit 2: Corrigida sintaxe da instrução <code>COPY</code> no Dockerfile</li>
+        <li>Commit 3: Corrigido caminho do arquivo style.css</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
