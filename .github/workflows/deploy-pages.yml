@@ -21,6 +21,8 @@ jobs:
         run: |
           mkdir _site
           cp relatorio-actions.html _site/index.html
+          cp -r styles _site/
+          cp -r imgs _site/
 
       - name: Upload artifact for deployment
         uses: actions/upload-pages-artifact@v3
