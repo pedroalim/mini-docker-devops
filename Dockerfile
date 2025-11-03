@@ -9,7 +9,7 @@ EXPOSE 80
 
 # Instruções para construir e rodar o contêiner:
 
-# 1.    docker build -t mini-explicador. 
+# 1.    docker build -t mini-explicador . 
 # 2.    docker run -d -p 8080:80 mini-explicador
 
 # docker ps             LISTA TODOS OS CONTAINERS RODANDOS
