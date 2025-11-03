@@ -11,3 +11,7 @@ EXPOSE 80
 
 # 1.    docker build -t mini-explicador. 
 # 2.    docker run -d -p 8080:80 mini-explicador
+
+# docker ps             LISTA TODOS OS CONTAINERS RODANDOS
+# docker stop <ID>      PARA O CONTAINER PELO ID
+# docker rm <ID>        REMOVE O CONTAINER PELO ID

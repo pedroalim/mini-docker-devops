@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Docker - Página Inicial</title>
+    <title>Docker - Início</title>
     <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="icon" type="image/x-icon" href="imgs\owl-flavicon.png">
 </head>
 <body>
     <div class="container">
@@ -11,17 +12,41 @@
             <a href="index.html">Início</a>
             <a href="concepts.html">Conceitos</a>
             <a href="pros-cons.html">Prós e Contras</a>
+            <a href="about.html">Sobre</a>
         </nav>
-        <h1>Bem-vindo ao Guia Docker</h1>
-        <h2>Introdução ao Docker</h2>
-        <p>Docker é uma plataforma open source que facilita a criação, implantação e execução de aplicações em containers. Com Docker, você pode separar suas aplicações da infraestrutura, permitindo uma entrega de software rápida.</p>
-        <h3>Por que usar Docker?</h3>
-        <ul>
-            <li>Facilita o desenvolvimento e implantação</li>
-            <li>Garante consistência entre ambientes</li>
-            <li>Maior eficiência no uso de recursos</li>
-            <li>Rápida escalabilidade</li>
-        </ul>
+        
+        <h1>Bem-vindo ao Mundo do Docker</h1>
+        
+        <h2>O que é Docker? Uma Revolução no Desenvolvimento</h2>
+        <p>Docker é uma plataforma de software de código aberto projetada para desenvolver, enviar e executar aplicações de forma rápida e consistente. A tecnologia permite empacotar uma aplicação e todas as suas dependências (bibliotecas, ferramentas de sistema, código e runtime) em uma unidade padronizada chamada <strong>contêiner</strong>.[1]</p>
+        <p>Ao separar as aplicações da infraestrutura subjacente, o Docker acelera significativamente o ciclo de vida do desenvolvimento de software. Isso resolve o clássico problema do "funciona na minha máquina", garantindo que o software se comporte da mesma maneira em qualquer ambiente, seja no laptop de um desenvolvedor, em um servidor de testes ou na nuvem em produção.[2, 3]</p>
+        
+        <h2>Principais Vantagens da Conteinerização</h2>
+        <p>A adoção do Docker traz benefícios que impactam diretamente a produtividade, a escalabilidade e a confiabilidade dos sistemas.</p>
+        
+        <h3>Portabilidade e Consistência</h3>
+        <p>Os contêineres encapsulam tudo o que uma aplicação precisa para rodar, garantindo um ambiente consistente do desenvolvimento à produção. Uma aplicação baseada em Docker pode ser movida sem problemas entre máquinas locais, data centers e provedores de nuvem, como a AWS.[1, 4]</p>
+
+        <h3>Eficiência e Desempenho</h3>
+        <p>Diferente das máquinas virtuais (VMs), os contêineres compartilham o kernel do sistema operacional do host, tornando-os extremamente leves e rápidos. Eles consomem menos recursos, iniciam em segundos e permitem que mais aplicações rodem no mesmo hardware, otimizando o uso da infraestrutura.[2, 3]</p>
+
+        <h3>Escalabilidade e Implantação Ágil</h3>
+        <p>A natureza leve dos contêineres facilita a escalabilidade horizontal, permitindo que aplicações e serviços sejam dimensionados ou desativados quase em tempo real para atender à demanda. O Docker se integra perfeitamente a fluxos de trabalho de Integração Contínua e Entrega Contínua (CI/CD), automatizando testes e implantações.[2]</p>
+
+        <h3>Isolamento e Segurança</h3>
+        <p>Cada contêiner Docker é executado em um ambiente isolado, garantindo que as aplicações não interfiram umas com as outras. Esse isolamento de processos não apenas melhora a estabilidade, mas também adiciona uma camada de segurança ao sistema.[3]</p>
+
+        <hr>
+        
+        <footer>
+            <h4>Fontes</h4>
+            <ul>
+                <li><a href="https://aws.amazon.com/docker/" target="_blank">AWS - O que é Docker?</a> [1]</li>
+                <li><a href="https://docs.docker.com/get-started/docker-overview/" target="_blank">Documentação Oficial do Docker - Visão Geral</a> [2]</li>
+                <li><a href="https://www.ibm.com/think/topics/docker" target="_blank">IBM - Tópicos sobre Docker</a> [4]</li>
+                <li><a href="https://medium.com/@belemgnegreetienne/the-ultimate-guide-to-docker-benefits-architecture-and-practical-steps-02d0f02e7eee" target="_blank">The Ultimate Guide to Docker (Medium)</a> [3]</li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>

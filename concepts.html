@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Docker - Conceitos</title>
     <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="icon" type="image/x-icon" href="imgs\owl-flavicon.png">
 </head>
 <body>
     <div class="container">
@@ -11,22 +12,41 @@
             <a href="index.html">Início</a>
             <a href="concepts.html">Conceitos</a>
             <a href="pros-cons.html">Prós e Contras</a>
+            <a href="about.html">Sobre</a>
         </nav>
-        <h1>Conceitos Fundamentais do Docker</h1>
         
-        <h2>O que é um Container?</h2>
-        <p>Um container é uma unidade padronizada de software que empacota código e todas as suas dependências para que a aplicação seja executada de forma rápida e confiável em diferentes ambientes computacionais.</p>
+        <h1>Conceitos Fundamentais do Ecossistema Docker</h1>
         
-        <h2>Docker vs. Máquinas Virtuais</h2>
-        <p>Diferente das máquinas virtuais tradicionais, containers Docker compartilham o mesmo kernel do sistema operacional e isolam os processos da aplicação do resto do sistema. Isso os torna mais leves e rápidos de iniciar.</p>
+        <h2>O que é um Contêiner?</h2>
+        <p>Um contêiner é um ambiente leve, autônomo e executável que inclui tudo o que é necessário para executar um software: o código, o runtime, as ferramentas de sistema, as bibliotecas e as configurações. Ele funciona como uma unidade de software padronizada que permite aos desenvolvedores isolar uma aplicação de seu ambiente, resolvendo o problema de inconsistências entre diferentes máquinas. Cada contêiner é executado como um processo isolado no sistema operacional do host, compartilhando o mesmo kernel, mas operando em seu próprio espaço de usuário.</p>
         
-        <h2>Componentes Principais</h2>
+        <h2>Docker vs. Máquinas Virtuais (VMs)</h2>
+        <p>A principal diferença entre contêineres e VMs está em sua abordagem à virtualização. Uma <strong>Máquina Virtual</strong> emula um computador completo, incluindo o hardware, e executa um sistema operacional convidado (Guest OS) inteiro sobre o sistema operacional do host (Host OS). Isso a torna pesada, consumindo gigabytes de espaço e levando minutos para iniciar.</p>
+        <p>Em contraste, um <strong>Contêiner Docker</strong> virtualiza o sistema operacional. Ele compartilha o kernel do Host OS com outros contêineres, mas isola os processos da aplicação. Isso elimina a necessidade de um Guest OS completo, resultando em um pacote muito mais leve (megabytes em vez de gigabytes) e um tempo de inicialização de segundos. Essa eficiência permite executar muito mais contêineres em um único servidor em comparação com VMs.</p>
+        
+        <h2>Componentes da Arquitetura Docker</h2>
+        <p>O Docker utiliza uma arquitetura cliente-servidor, onde o cliente se comunica com o daemon (servidor) para executar as tarefas de construção, execução e distribuição de contêineres.</p>
         <ul>
-            <li><strong>Docker Engine:</strong> O motor que executa os containers</li>
-            <li><strong>Dockerfile:</strong> Arquivo de configuração para criar imagens</li>
-            <li><strong>Docker Image:</strong> Template para criar containers</li>
-            <li><strong>Docker Container:</strong> Instância em execução de uma imagem</li>
+            <li><strong>Docker Engine:</strong> É o coração da plataforma. Consiste no <strong>Docker Daemon</strong> (<code>dockerd</code>), um processo persistente que gerencia imagens, contêineres, redes e volumes, e na <strong>API REST</strong>, que especifica como as aplicações podem interagir com o Daemon. O <strong>Docker Client</strong> (<code>docker</code>) é a interface de linha de comando (CLI) que usamos para enviar comandos ao Daemon.</li>
+            
+            <li><strong>Dockerfile:</strong> É um arquivo de texto que contém uma sequência de comandos e instruções para construir uma Imagem Docker. Ele funciona como uma "receita" ou um script de automação, definindo o sistema operacional base, as dependências a serem instaladas, os arquivos a serem copiados, as portas a serem expostas e o comando a ser executado quando o contêiner for iniciado.</li>
+            
+            <li><strong>Docker Image (Imagem):</strong> É um template de leitura-apenas, semelhante a um "snapshot" ou "blueprint", usado para criar contêineres. As imagens são construídas a partir das instruções de um Dockerfile e contêm o código da aplicação, bibliotecas, ferramentas e outras dependências necessárias para a execução. Elas são armazenadas em um registro, como o Docker Hub.</li>
+            
+            <li><strong>Docker Container (Contêiner):</strong> É a instância em execução de uma Imagem Docker. É o ambiente encapsulado e isolado onde a aplicação realmente roda. Um contêiner é a unidade viva e executável criada a partir do template estático da imagem. É possível criar, iniciar, parar, mover e excluir contêineres usando a API ou a CLI do Docker.</li>
         </ul>
+
+        <hr>
+
+        <footer>
+            <h4>Fontes</h4>
+            <ul>
+                <li><a href="https://docs.docker.com/get-started/docker-overview/" target="_blank">Documentação Oficial do Docker - Arquitetura</a></li>
+                <li><a href="https://aws.amazon.com/docker/" target="_blank">AWS - O que é Docker?</a></li>
+                <li><a href="https://medium.com/@belemgnegreetienne/the-ultimate-guide-to-docker-benefits-architecture-and-practical-steps-02d0f02e7eee" target="_blank">The Ultimate Guide to Docker (Medium)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Docker_(software)" target="_blank">Wikipedia - Docker (software)</a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>

@@ -6,20 +6,30 @@
       padding:40px;
     }
 
+    .header {
+      background: #fff; 
+      border-radius: 14px; 
+      box-shadow: 0 2px 16px #d0e4fb40; 
+      max-width: 1000px; margin: 0 auto; 
+      padding: 32px;
+      margin-bottom: 2em;
+    }
+
     .relatorio {
       background: #fff; 
       border-radius: 14px; 
       box-shadow: 0 2px 16px #d0e4fb40; 
       max-width: 650px; margin: 0 auto; 
       padding: 32px;
+      margin-bottom: 2em;
     }
 
     h2 {
-      color: #0b57d0;
+      color: #0b67d0;
     }
 
     h3 {
-      color: #3762bc;
+      color: #8037bc;
     }
 
     pre {
@@ -38,7 +48,7 @@
       margin-top:18px;
     }
 
-    ul {
+    ul{
       margin-left:1.5em;
     }
 
